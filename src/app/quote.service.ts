@@ -31,7 +31,7 @@ export class QuoteService {
         return this.http.put('http://localhost:8000/api/quote/' + id, body, {headers: headers})
             .map(
                 (response: Response) => response.json()
-            )
+            );
     }
 
     deleteQuote(id: number){
